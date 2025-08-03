@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تاج لتجارة الحاسبات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .hero {
+      background: url('https://i.imgur.com/C0z0dWW.jpg') no-repeat center center;
+      background-size: contain;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+    .contact {
+      background-color: #111;
+      border-top: 2px solid #ffd700;
+      border-bottom: 2px solid #ffd700;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .whatsapp-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 15px 25px;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero"></div>
+
+  <div class="section">
+    <h2>من نحن</h2>
+    <p>تاج لتجارة الحاسبات هي صفحة متخصصة ببيع الحاسبات بمختلف أنواعها، نوفّر أفضل العروض وخدمة التوصيل لجميع المحافظات. هدفنا هو تقديم أجهزة عالية الجودة بأسعار منافسة.</p>
+  </div>
+
+  <div class="section">
+    <h2>العروض الحالية</h2>
+    <p>لابتوب HP 650 G1 - Core i7 / SSD 256GB / RAM 8GB / شاشة 15.6 بوصة – السعر: 185,000 د.ع فقط.</p>
+    <p>✅ التوصيل متوفر لكل المحافظات</p>
+    <p>✅ ضمان فحص واستلام</p>
+  </div>
+
+  <div class="section contact">
+    <h2>اتصل بنا</h2>
+    <p>📞 07718821167</p>
+    <p>📍 بابل - خدمة التوصيل متوفرة</p>
+    <p class="social-links">
+      تابعنا على:
+      <a href="https://www.facebook.com/profile.php?id=100064606575342" target="_blank">فيسبوك</a>
+      |
+      <a href="https://www.instagram.com/taj.laptops/" target="_blank">إنستغرام</a>
+    </p>
+    <a class="whatsapp-button" href="https://wa.me/9647718821167" target="_blank">💬 تواصل معنا على واتساب</a>
+  </div>
+
+  <footer>
+    &copy; 2025 تاج لتجارة الحاسبات. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
