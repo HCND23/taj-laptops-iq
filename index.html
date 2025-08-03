@@ -28,7 +28,7 @@
     }
     .section {
       padding: 60px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
@@ -58,11 +58,78 @@
       margin: 30px auto;
       padding: 15px 25px;
       background-color: #25D366;
-      color: white;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
       text-align: center;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .product {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .product strong {
+      color: #ffd700;
+    }
+    .product-images {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .product-images img {
+      width: 100px;
+      border-radius: 6px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-family: 'Cairo', sans-serif;
+    }
+    button[type="submit"] {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #scrollTop {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-weight: bold;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+    @media (max-width: 900px) {
+      .product-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .product-list {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -78,9 +145,66 @@
 
   <div class="section">
     <h2>العروض الحالية</h2>
-    <p>لابتوب HP 650 G1 - Core i7 / SSD 256GB / RAM 8GB / شاشة 15.6 بوصة – السعر: 185,000 د.ع فقط.</p>
-    <p>✅ التوصيل متوفر لكل المحافظات</p>
+    <div class="product-list">
+      <div class="product">
+        <strong>HP 650 G1</strong>
+        <p>
+          ◻️ معالج Intel Core i7<br>
+          ◻️ هارد SSD 256GB<br>
+          ◻️ رام 8GB<br>
+          ◻️ شاشة 15.6 بوصة<br>
+          <strong>السعر: 185,000 د.ع</strong>
+        </p>
+<div class="product-images">
+  <img src="images/hp650-1.jpg" alt="HP 650 G1 - 1">
+  <img src="images/hp650-2.jpg" alt="HP 650 G1 - 2">
+  <img src="images/hp650-3.jpg" alt="HP 650 G1 - 3">
+  <img src="images/hp650-4.jpg" alt="HP 650 G1 - 4">
+</div>
+      </div>
+      <div class="product">
+        <strong>Dell Latitude 5570</strong>
+        <p>
+          ◻️ معالج Intel Core i5<br>
+          ◻️ هارد SSD 256GB<br>
+          ◻️ رام 8GB<br>
+          ◻️ شاشة 15.6 بوصة<br>
+          <strong>السعر: 190,000 د.ع</strong>
+        </p>
+      </div>
+      <div class="product">
+        <strong>HP 640 G4</strong>
+        <p>
+          ◻️ معالج Intel Core i5<br>
+          ◻️ هارد SSD 256GB<br>
+          ◻️ رام 8GB<br>
+          ◻️ شاشة 14 بوصة<br>
+          <strong>السعر: 225,000 د.ع</strong>
+        </p>
+      </div>
+      <div class="product">
+        <strong>HP 800 G6 All-in-One</strong>
+        <p>
+          ◻️ معالج Intel Core i5 الجيل العاشر<br>
+          ◻️ الشاشة 24 إنش تدعم اللمس<br>
+          ◻️ الرام 8 كيكا<br>
+          ◻️ هارديسك 512 كيكا SSD M.2<br>
+          <strong>السعر: 640,000 د.ع</strong>
+        </p>
+      </div>
+      <div class="product">
+        <strong>LENOVO All-in-One</strong>
+        <p>
+          ◻️ شاشة كبيرة 24 بوصة سلم<br>
+          ◻️ معالج Intel Core i5 – الجيل السادس<br>
+          ◻️ ذاكرة 8GB RAM<br>
+          ◻️ قرص صلب 256GB SSD<br>
+          <strong>السعر: 250,000 د.ع</strong>
+        </p>
+      </div>
+    </div>
     <p>✅ ضمان فحص واستلام</p>
+    <p>✅ التوصيل متوفر لكل المحافظات</p>
   </div>
 
   <div class="section contact">
@@ -93,11 +217,33 @@
       |
       <a href="https://www.instagram.com/taj.laptops/" target="_blank">إنستغرام</a>
     </p>
-    <a class="whatsapp-button" href="https://wa.me/9647718821167" target="_blank">💬 تواصل معنا على واتساب</a>
+    <a class="whatsapp-button" href="https://wa.me/9647718821167" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب" style="width: 20px; vertical-align: middle; margin-left: 8px;">
+      تواصل معنا على واتساب
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>نموذج الطلب</h2>
+    <form action="https://formspree.io/f/mjvnezke" method="POST">
+      <input type="text" name="name" placeholder="الاسم الكامل" required>
+      <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+      <textarea name="details" placeholder="تفاصيل الطلب" rows="4" required></textarea>
+      <button type="submit">إرسال الطلب</button>
+    </form>
   </div>
 
   <footer>
     &copy; 2025 تاج لتجارة الحاسبات. جميع الحقوق محفوظة.
   </footer>
+
+  <div id="scrollTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</div>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollTop');
+    window.onscroll = () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+  </script>
 </body>
 </html>
